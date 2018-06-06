@@ -1,0 +1,29 @@
+// Working on move controls
+noStroke();
+
+var x = 200;
+var y = 200;
+
+draw = function() {
+    background(255,255,255);
+
+    fill(186, 182, 123);
+    ellipse(x,y,20,20);
+
+    if (keyIsPressed && keyCode === UP) {
+        y = y - 1;
+    }
+
+    if (keyIsPressed && keyCode === DOWN) {
+        y = y + 1;
+    }
+
+    if (keyIsPressed && keyCode === LEFT) {
+        x = x - 1;
+    }
+
+    if (keyIsPressed && keyCode === RIGHT) {
+        x = x + 1;
+    }
+
+};
